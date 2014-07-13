@@ -25,6 +25,8 @@ namespace MudikApp2014
         {
             InitializeComponent();
             Thread.Sleep(1500);
+            this.address1TextBox.SuggestionsSource = AppDataConstant.SuggestionPlaceIndonesia;
+            this.address2TextBox.SuggestionsSource = AppDataConstant.SuggestionPlaceIndonesia;
         }
 
         protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
@@ -376,112 +378,112 @@ namespace MudikApp2014
 
         #endregion
 
-        private List<string> suggestions = new List<string>();
-        private string GlobalSearchTerm = string.Empty;
-        private bool IsSearching = false;
+        #region Get Suggestion Place from Nokia Map
+        //private List<string> suggestions = new List<string>();
+        //private string GlobalSearchTerm = string.Empty;
+        //private bool IsSearching = false;
 
-        private void address1TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            int lng = address1TextBox.Text.Length;
-            if (lng <= 5) return;
+        //private void address1TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        //{
+        //    int lng = address1TextBox.Text.Length;
+        //    if (lng <= 5) return;
 
-            if (IsSearching) return;
-            IsSearching = true;
-            GlobalSearchTerm = address1TextBox.Text.ToLower();
-            SearchForTerm(address1TextBox.Text);
-        }
+        //    if (IsSearching) return;
+        //    IsSearching = true;
+        //    GlobalSearchTerm = address1TextBox.Text.ToLower();
+        //    SearchForTerm(address1TextBox.Text);
+        //}
 
-        private void SearchForTerm(String searchTerm)
-        {
-            try
-            {
-                var MyGeocodeQuery = new GeocodeQuery();
-                MyGeocodeQuery.SearchTerm = searchTerm;
-                MyGeocodeQuery.GeoCoordinate = new GeoCoordinate(-6.2087630, 106.8455990);
-                MyGeocodeQuery.QueryCompleted += GeocodeQuery_QueryCompleted;
-                MyGeocodeQuery.QueryAsync();
-            }
-            catch (Exception ex)
-            {
-                IsSearching = false;
-                //MessageBox.Show(ex.Message);
-            }
-        }
+        //private void SearchForTerm(String searchTerm)
+        //{
+        //    try
+        //    {
+        //        var MyGeocodeQuery = new GeocodeQuery();
+        //        MyGeocodeQuery.SearchTerm = searchTerm;
+        //        MyGeocodeQuery.GeoCoordinate = new GeoCoordinate(-6.2087630, 106.8455990);
+        //        MyGeocodeQuery.QueryCompleted += GeocodeQuery_QueryCompleted;
+        //        MyGeocodeQuery.QueryAsync();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        IsSearching = false;
+        //        //MessageBox.Show(ex.Message);
+        //    }
+        //}
 
-        private void GeocodeQuery_QueryCompleted(object sender, QueryCompletedEventArgs<IList<MapLocation>> e)
-        {
-            if (e.Error == null)
-            {
-                foreach (MapLocation item in e.Result)
-                {
-                    string hasil = string.Empty;
+        //private void GeocodeQuery_QueryCompleted(object sender, QueryCompletedEventArgs<IList<MapLocation>> e)
+        //{
+        //    if (e.Error == null)
+        //    {
+        //        foreach (MapLocation item in e.Result)
+        //        {
+        //            string hasil = string.Empty;
 
-                    if (item.Information.Address.Street.ToLower().Contains(GlobalSearchTerm)) 
-                        hasil = item.Information.Address.Street;
-                    if (suggestions.Contains(hasil) == false && hasil != string.Empty) 
-                        suggestions.Add(hasil);
+        //            if (item.Information.Address.Street.ToLower().Contains(GlobalSearchTerm)) 
+        //                hasil = item.Information.Address.Street;
+        //            if (suggestions.Contains(hasil) == false && hasil != string.Empty) 
+        //                suggestions.Add(hasil);
 
-                    if (item.Information.Address.District.ToLower().Contains(GlobalSearchTerm))
-                        hasil = item.Information.Address.District;
-                    if (suggestions.Contains(hasil) == false && hasil != string.Empty)
-                        suggestions.Add(hasil);
+        //            if (item.Information.Address.District.ToLower().Contains(GlobalSearchTerm))
+        //                hasil = item.Information.Address.District;
+        //            if (suggestions.Contains(hasil) == false && hasil != string.Empty)
+        //                suggestions.Add(hasil);
 
-                    if (item.Information.Address.State.ToLower().Contains(GlobalSearchTerm))
-                        hasil = item.Information.Address.State;
-                    if (suggestions.Contains(hasil) == false && hasil != string.Empty)
-                        suggestions.Add(hasil);
+        //            if (item.Information.Address.State.ToLower().Contains(GlobalSearchTerm))
+        //                hasil = item.Information.Address.State;
+        //            if (suggestions.Contains(hasil) == false && hasil != string.Empty)
+        //                suggestions.Add(hasil);
 
-                    if (item.Information.Address.City.ToLower().Contains(GlobalSearchTerm))
-                        hasil = item.Information.Address.City;
-                    if (suggestions.Contains(hasil) == false && hasil != string.Empty)
-                        suggestions.Add(hasil);
+        //            if (item.Information.Address.City.ToLower().Contains(GlobalSearchTerm))
+        //                hasil = item.Information.Address.City;
+        //            if (suggestions.Contains(hasil) == false && hasil != string.Empty)
+        //                suggestions.Add(hasil);
 
-                    if (item.Information.Address.Country.ToLower().Contains(GlobalSearchTerm))
-                        hasil = item.Information.Address.Country;
-                    if (suggestions.Contains(hasil) == false && hasil != string.Empty)
-                        suggestions.Add(hasil);
+        //            if (item.Information.Address.Country.ToLower().Contains(GlobalSearchTerm))
+        //                hasil = item.Information.Address.Country;
+        //            if (suggestions.Contains(hasil) == false && hasil != string.Empty)
+        //                suggestions.Add(hasil);
 
-                    if (item.Information.Address.Province.ToLower().Contains(GlobalSearchTerm))
-                        hasil = item.Information.Address.Province;
-                    if (suggestions.Contains(hasil) == false && hasil != string.Empty)
-                        suggestions.Add(hasil);
+        //            if (item.Information.Address.Province.ToLower().Contains(GlobalSearchTerm))
+        //                hasil = item.Information.Address.Province;
+        //            if (suggestions.Contains(hasil) == false && hasil != string.Empty)
+        //                suggestions.Add(hasil);
                     
-                }
-                this.address1TextBox.SuggestionsSource = suggestions;
-                this.address2TextBox.SuggestionsSource = suggestions;
-                IsSearching = false;
-                //if (e.Result.Count > 0)
-                //{
-                //    if (_isRouteSearch) // Query is made to locate the destination of a route
-                //    {
-                //    }
-                //    else // Query is made to search the map for a keyword
-                //    {
-                //        // Add all results to MyCoordinates for drawing the map markers
-                //        for (int i = 0; i < e.Result.Count; i++)
-                //        {
-                //            MyCoordinates.Add(e.Result[i].GeoCoordinate);
-                //        }
-                //    }
-                //}
-                //else
-                //{
-                //    MessageBox.Show("No match found. Narrow your search e.g. Seattle WA.");
-                //}
-            }
-        }
+        //        }
+        //        this.address1TextBox.SuggestionsSource = suggestions;
+        //        this.address2TextBox.SuggestionsSource = suggestions;
+        //        IsSearching = false;
+        //        //if (e.Result.Count > 0)
+        //        //{
+        //        //    if (_isRouteSearch) // Query is made to locate the destination of a route
+        //        //    {
+        //        //    }
+        //        //    else // Query is made to search the map for a keyword
+        //        //    {
+        //        //        // Add all results to MyCoordinates for drawing the map markers
+        //        //        for (int i = 0; i < e.Result.Count; i++)
+        //        //        {
+        //        //            MyCoordinates.Add(e.Result[i].GeoCoordinate);
+        //        //        }
+        //        //    }
+        //        //}
+        //        //else
+        //        //{
+        //        //    MessageBox.Show("No match found. Narrow your search e.g. Seattle WA.");
+        //        //}
+        //    }
+        //}
 
-        private void address2TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            int lng = address2TextBox.Text.Length;
-            if (lng <= 5) return;
+        //private void address2TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        //{
+        //    int lng = address2TextBox.Text.Length;
+        //    if (lng <= 5) return;
 
-            if (IsSearching) return;
-            IsSearching = true;
-            GlobalSearchTerm = address2TextBox.Text.ToLower();
-            SearchForTerm(address2TextBox.Text);
-        }
-
-        
+        //    if (IsSearching) return;
+        //    IsSearching = true;
+        //    GlobalSearchTerm = address2TextBox.Text.ToLower();
+        //    SearchForTerm(address2TextBox.Text);
+        //}
+        #endregion
     }
 }

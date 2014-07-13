@@ -132,3 +132,4 @@ E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp\MudikApp2014\obj\Debug\MudikApp
 E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp\MudikApp2014\obj\Debug\MudikApp2014.dll
 E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp\MudikApp2014\obj\Debug\MudikApp2014.pdb
 E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp\MudikApp2014\obj\Debug\XapCacheFile.xml
+C:\Users\boniyustin\Documents\MudikApp2014\MudikApp2014\obj\Debug\MudikApp2014.csprojResolveAssemblyReference.cache

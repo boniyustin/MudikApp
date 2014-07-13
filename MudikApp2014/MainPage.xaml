@@ -84,10 +84,10 @@
                     </DataTemplate>
                 </phone:PanoramaItem.HeaderTemplate>
                 <StackPanel Orientation="Vertical">
-                    <telerikInput:RadAutoCompleteBox x:Name="address1TextBox" TextChanged="address1TextBox_TextChanged"/>
+                    <telerikInput:RadAutoCompleteBox x:Name="address1TextBox"/>
                     <CheckBox Name="CurrentLocationCheckBox" Content="Pakai lokasi sekarang" FontSize="24" Foreground="Black" Checked="CurrentLocation_Checked" Unchecked="CurrentLocation_Unchecked"/>
                     <Path Data="M10,74 L450,74" Fill="#FF28166F" HorizontalAlignment="Left" Height="2" Margin="0" Stretch="Fill" Stroke="#FFF0C255" UseLayoutRounding="False" VerticalAlignment="Top" Width="450"/>
-                    <telerikInput:RadAutoCompleteBox x:Name="address2TextBox" TextChanged="address2TextBox_TextChanged"/>
+                    <telerikInput:RadAutoCompleteBox x:Name="address2TextBox"/>
                     <Button Click="getRouteButton_Click" Height="100" Background="#FF28166F" BorderBrush="{x:Null}" Content="Dapatkan Petunjuk" FontFamily="Segoe WP" FontSize="24" FontWeight="SemiBold"/>
                 </StackPanel>
             </phone:PanoramaItem>
