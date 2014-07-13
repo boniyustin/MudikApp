@@ -14,6 +14,7 @@ using System.Device.Location;
 using System.IO.IsolatedStorage;
 using Windows.Devices.Geolocation;
 using System.Diagnostics;
+using System.Threading;
 
 namespace MudikApp2014
 {
@@ -23,6 +24,7 @@ namespace MudikApp2014
         public MainPage()
         {
             InitializeComponent();
+            Thread.Sleep(1500);
         }
 
         protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)

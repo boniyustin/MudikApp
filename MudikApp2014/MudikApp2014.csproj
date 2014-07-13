@@ -206,6 +206,7 @@
     <Content Include="Assets\Tiles\medium-tile.png" />
     <Content Include="Assets\Tiles\small-tile.png" />
     <Content Include="Assets\transportasi.png" />
+    <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\AppResources.resx">
