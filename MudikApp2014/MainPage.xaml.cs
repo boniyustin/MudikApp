@@ -148,8 +148,6 @@ namespace MudikApp2014
                 MessageBox.Show(App.NoInternet);
                 return;
             }
-
-            InitiateData();
         }
 
         private void ImageJalur_Tap(object sender, System.Windows.Input.GestureEventArgs e)
@@ -312,71 +310,12 @@ namespace MudikApp2014
 
         #endregion
 
-        #region Info Lalu Lintas
-
-        public void InitiateData()
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            WebClient client = new WebClient();
-            String username = "rttmc_client";
-            String password = "rttmc_m4p5";
-            string url = String.Format("http://www.rttmc-hubdat.com/client/maps/api/news/list?page={0}&rows={1}", 1, 50);
-
-            client.Credentials = new System.Net.NetworkCredential(username, password);
-
-            string credentials = Convert.ToBase64String(StringToAscii(username + ":" + password));
-
-            client.Headers[HttpRequestHeader.Authorization] = "Basic " + credentials;
-
-            client.DownloadStringCompleted += client_DownloadStringCompleted;
-            client.DownloadStringAsync(new Uri(url, UriKind.Absolute));
-
+            this.NavigationService.Navigate(new Uri("/Pages/NewsLocationPage.xaml", UriKind.Relative));
         }
 
-        void client_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
-        {
-            try
-            {
-                if (!String.IsNullOrEmpty(e.Result))
-                {
-                    var result = XMLHelper.Deserialize<xml>(e.Result);
-                    foreach (var item in result.news)
-                    {
-                        item.nama_lokasi = item.nama_lokasi + ", " + item.nama_kota;
-                        item.cuaca = item.cuaca + " dan " + item.arus;
-                        item.cctv_view = "http://203.130.228.228/" + item.cctv_view + ".jpg";
-                    }
-                    NewsListBox.ItemsSource = result.news;
-                }
-                else
-                {
-                    MessageBox.Show("No Data received");
-                }
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(e.Error.Message + "\n" + ex.Message);
-            }
-        }
-
-        public static byte[] StringToAscii(string s)
-        {
-            byte[] retval = new byte[s.Length];
-            for (int ix = 0; ix < s.Length; ++ix)
-            {
-                char ch = s[ix];
-                if (ch <= 0x7f) retval[ix] = (byte)ch;
-                else retval[ix] = (byte)'?';
-            }
-            return retval;
-        }
-
-        private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
-        {
-            InitiateData();
-        }
-
-        #endregion
+        
 
         #region Get Suggestion Place from Nokia Map
         //private List<string> suggestions = new List<string>();

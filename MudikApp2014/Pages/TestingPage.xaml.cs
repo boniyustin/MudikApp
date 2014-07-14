@@ -17,7 +17,7 @@ namespace MudikApp2014.Pages
         public TestingPage()
         {
             InitializeComponent();
-            SearchForTerm("Batunung");
+            InitiateData();
         }
         private void SearchForTerm(String searchTerm)
         {
@@ -51,6 +51,27 @@ namespace MudikApp2014.Pages
                 //    MessageBox.Show("No match found. Narrow your search e.g. Seattle WA.");
                 //}
             }
+        }
+
+        public void InitiateData()
+        {
+             WebClient webClient = new WebClient();
+            webClient.Headers[HttpRequestHeader.ContentType] = "application/x-www-form-urlencoded";
+            var uri = new Uri("http://www.rttmc-hubdat.com/webgis/places/json_client_cctv", UriKind.Absolute);
+
+            System.Text.StringBuilder postData = new System.Text.StringBuilder();
+            postData.AppendFormat("{0}={1}", "token", "r77mch0bd0t?");
+
+            webClient.Headers[HttpRequestHeader.ContentLength] = postData.Length.ToString();
+            webClient.UploadStringCompleted += new UploadStringCompletedEventHandler(webClient_UploadStringCompleted);
+            //webClient.UploadProgressChanged += webClient_UploadProgressChanged;
+            webClient.UploadStringAsync(uri, "POST", postData.ToString());
+
+        }
+
+        void webClient_UploadStringCompleted(object sender, UploadStringCompletedEventArgs e)
+        {
+            string res = e.Result;
         }
     }
 }

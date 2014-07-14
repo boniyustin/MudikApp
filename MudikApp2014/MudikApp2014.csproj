@@ -97,6 +97,7 @@
     <Compile Include="Classes\JsonPlaces.cs" />
     <Compile Include="Classes\PlaceCategory.cs" />
     <Compile Include="Classes\RootObjectJalur.cs" />
+    <Compile Include="Classes\RootObjectLaluLintas.cs" />
     <Compile Include="Classes\RSSNewsClass.cs" />
     <Compile Include="Classes\TransitionData.cs" />
     <Compile Include="Classes\XMLHelper.cs" />
@@ -115,6 +116,9 @@
     </Compile>
     <Compile Include="Pages\LocationMapPage.xaml.cs">
       <DependentUpon>LocationMapPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\NewsLocationPage.xaml.cs">
+      <DependentUpon>NewsLocationPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\PlaceCategory.cs">
       <DependentUpon>NearbyPlacePage.xaml</DependentUpon>
@@ -155,6 +159,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\NearbyPlacePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\NewsLocationPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

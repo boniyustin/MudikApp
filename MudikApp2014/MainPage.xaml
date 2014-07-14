@@ -147,19 +147,7 @@
                     </DataTemplate>
                 </phone:PanoramaItem.HeaderTemplate>
                 <StackPanel Margin="0,-40,0,0">
-                    <ListBox Margin="0,0,0,80" x:Name="NewsListBox" Height="470">
-                        <ListBox.ItemTemplate>
-                            <DataTemplate>
-                                <Grid Margin="20,20,10,10" Grid.Row="1">
-                                    <Image Margin="0,0" HorizontalAlignment="Left" Source="{Binding cctv_view}"  Height="120" Width="120"/>
-                                    <TextBlock HorizontalAlignment="Left" Height="40" Margin="125,0,0,0" TextWrapping="Wrap" Text="{Binding nama_lokasi}" VerticalAlignment="Top" Width="300" FontSize="24" Foreground="#28166f"/>
-                                    <TextBlock HorizontalAlignment="Left" Height="40" Margin="125,44,0,0" TextWrapping="Wrap" Text="{Binding cuaca}" VerticalAlignment="Top" Width="300" FontSize="24" Foreground="#28166f"/>
-                                    <TextBlock HorizontalAlignment="Left" Height="30" Margin="125,88,0,0" TextWrapping="Wrap" Text="{Binding last_update}" VerticalAlignment="Bottom" Width="300" FontSize="16" Foreground="#28166f"/>
-                                    <Path Data="M10,74 L450,74" Fill="#FFF0C255" HorizontalAlignment="Left" Height="1" Margin="0,130,0,-13.334" Stretch="Fill" Stroke="#FFF0C255" UseLayoutRounding="False" VerticalAlignment="Top" Width="450"/>
-                                </Grid>
-                            </DataTemplate>
-                        </ListBox.ItemTemplate>
-                    </ListBox>
+                    <Button Content="Ke Halaman Info Lalu Lintas" Foreground="#28166f" BorderBrush="#28166f" Click="Button_Click" />
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
                         <!--<Button Content="Previous"  Height="80" Width="230" Click="Previous_Click"/>
                                 <Button Content="Next"      Height="80" Width="230" Click="Next_Click"/>-->

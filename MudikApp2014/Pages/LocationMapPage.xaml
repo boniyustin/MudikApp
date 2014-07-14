@@ -12,8 +12,7 @@
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
     mc:Ignorable="d"
-    shell:SystemTray.IsVisible="True"
-    Loaded="LocationMapPage_Loaded">
+    shell:SystemTray.IsVisible="True">
 
     <Grid x:Name="LayoutRoot">
         <Grid.Background>
@@ -40,6 +39,7 @@
         		HorizontalAlignment="Stretch"
         		VerticalAlignment="Stretch"
         		LandmarksEnabled="True"
+                Tap="Map_OnTap"
                 />
         </Grid>
     </Grid>

@@ -21,7 +21,7 @@ namespace MudikApp2014.Classes
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     public partial class xmlItem
     {
-        public byte id { get; set; }
+        public int id { get; set; }
 
         public string nama_lokasi { get; set; }
 

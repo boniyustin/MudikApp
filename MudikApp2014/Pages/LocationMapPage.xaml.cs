@@ -13,6 +13,7 @@ using System.Windows.Shapes;
 using System.Windows.Media;
 using MudikApp2014.Classes;
 using Microsoft.Phone.Maps.Services;
+using System.Windows.Input;
 
 namespace MudikApp2014.Pages
 {
@@ -40,6 +41,7 @@ namespace MudikApp2014.Pages
         {
             map1.Layers.Add(new MapLayer()
             {
+                
                 new MapOverlay()
                 {
                     GeoCoordinate = geo,
@@ -52,9 +54,9 @@ namespace MudikApp2014.Pages
                         Width = 20,
                         Height = 30
                     }
-                    
                 }
             });
+            
 
             map1.Center = geo;
         }
@@ -107,13 +109,18 @@ namespace MudikApp2014.Pages
         }
         #endregion
 
-        private void LocationMapPage_Loaded(object sender, RoutedEventArgs e)
-        {
-    //        var coord = new GeoCoordinate(52.53, 13.39),
-    ////standardMarker = new nokia.maps.map.StandardMarker(coord);
-    //marker = new             map.objects.add(standardMarker);
-        }
 
+        private void Map_OnTap(object sender, GestureEventArgs e)
+        {
+            //Pushpin 
+            //var point = e.GetPosition(sender as Map);
+            Point p1 = e.GetPosition(sender as Map);
+            GeoCoordinate gc = (sender as Map).ConvertViewportPointToGeoCoordinate(p1);
+            //var coordinate = Map.ConvertViewportPointToGeoCoordinate(point);
+
+            //int elements = map1.GetMapElementsAt(p1).Count;
+            //System.Diagnostics.Debug.WriteLine(string.Format("Hit {0} map element(s)", elements));
+        }
         
     }
 }
