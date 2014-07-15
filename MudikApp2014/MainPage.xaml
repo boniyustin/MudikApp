@@ -52,15 +52,15 @@
             </phone:Panorama.Background>
 
             <!--Panorama item one-->
-            <phone:PanoramaItem>
-                <phone:PanoramaItem.HeaderTemplate>
+            <phone:PanoramaItem Header="jalur mudik" Foreground="#FF28166F">
+                <!--<phone:PanoramaItem.HeaderTemplate>
                     <DataTemplate>
                         <Grid>
                             <Image Source="/Assets/ribbon.png" Width="50" Height="78" HorizontalAlignment="Left"/>
                             <TextBlock Text="jalur mudik" FontFamily="Segoe WP" FontSize="35" FontWeight="Bold" Foreground="#28166f" Margin="59,12,0,0"/>
                         </Grid>
                     </DataTemplate>
-                </phone:PanoramaItem.HeaderTemplate>
+                </phone:PanoramaItem.HeaderTemplate>-->
                 <StackPanel Orientation="Vertical">
                     <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left" Orientation="Horizontal" Margin="0,0,0,20">
                         <Image Height="200" Width="200" Margin="0,0,10,0" Source="/Assets/btn_utara.png" Tap="ImageJalur_Tap" Tag="JalurUtara"/>
@@ -74,34 +74,36 @@
             </phone:PanoramaItem>
 
             <!--Panorama item two-->
-            <phone:PanoramaItem>
-                <phone:PanoramaItem.HeaderTemplate>
+            <phone:PanoramaItem Header="petunjuk jalan" Foreground="#FF28166F">
+                <!--<phone:PanoramaItem.HeaderTemplate>
                     <DataTemplate>
                         <Grid>
                             <Image Source="/Assets/ribbon.png" Width="50" Height="78" HorizontalAlignment="Left"/>
                             <TextBlock Text="petunjuk jalan" FontFamily="Segoe WP" FontSize="35" FontWeight="Bold" Foreground="#28166f" Margin="59,12,0,0"/>
                         </Grid>
                     </DataTemplate>
-                </phone:PanoramaItem.HeaderTemplate>
+                </phone:PanoramaItem.HeaderTemplate>-->
                 <StackPanel Orientation="Vertical">
+                    <TextBlock Text="Lokasi Awal:" Foreground="#FF28166F" Margin="10,0,0,-15" FontSize="24" />
                     <telerikInput:RadAutoCompleteBox x:Name="address1TextBox"/>
-                    <CheckBox Name="CurrentLocationCheckBox" Content="Pakai lokasi sekarang" FontSize="24" Foreground="Black" Checked="CurrentLocation_Checked" Unchecked="CurrentLocation_Unchecked"/>
-                    <Path Data="M10,74 L450,74" Fill="#FF28166F" HorizontalAlignment="Left" Height="2" Margin="0" Stretch="Fill" Stroke="#FFF0C255" UseLayoutRounding="False" VerticalAlignment="Top" Width="450"/>
+                    <CheckBox Name="CurrentLocationCheckBox" Content="Pakai lokasi sekarang" FontSize="18" Foreground="#FF28166F" Checked="CurrentLocation_Checked" Unchecked="CurrentLocation_Unchecked" BorderBrush="#FF28166F" Margin="0,-20,0,0"/>
+                    <Path Data="M10,74 L450,74" HorizontalAlignment="Left" Height="2" Margin="0" Stretch="Fill" UseLayoutRounding="False" VerticalAlignment="Top" Width="450"/>
+                    <TextBlock Text="Lokasi Tujuan:" Foreground="#FF28166F" Margin="10,0,0,-15" FontSize="24" />
                     <telerikInput:RadAutoCompleteBox x:Name="address2TextBox"/>
-                    <Button Click="getRouteButton_Click" Height="100" Background="#FF28166F" BorderBrush="{x:Null}" Content="Dapatkan Petunjuk" FontFamily="Segoe WP" FontSize="24" FontWeight="SemiBold"/>
+                    <Button Click="getRouteButton_Click" Height="100" Background="{x:Null}" BorderBrush="#FF28166F" Content="Dapatkan Petunjuk" FontFamily="Segoe WP" FontSize="24" FontWeight="SemiBold" Foreground="White"/>
                 </StackPanel>
             </phone:PanoramaItem>
 
             <!--Panorama item three-->
-            <phone:PanoramaItem>
-                <phone:PanoramaItem.HeaderTemplate>
+            <phone:PanoramaItem Header="sekitar kita" Foreground="#FF28166F">
+                <!--<phone:PanoramaItem.HeaderTemplate>
                     <DataTemplate>
                         <Grid>
                             <Image Source="/Assets/ribbon.png" Width="50" Height="78" HorizontalAlignment="Left"/>
                             <TextBlock Text="sekitar kita" FontFamily="Segoe WP" FontSize="35" FontWeight="Bold" Foreground="#28166f" Margin="59,12,0,0"/>
                         </Grid>
                     </DataTemplate>
-                </phone:PanoramaItem.HeaderTemplate>
+                </phone:PanoramaItem.HeaderTemplate>-->
                 <StackPanel Orientation="Vertical">
                     <ListBox>
                         <StackPanel Orientation="Horizontal" Margin="0,0,0,20" Tap="kuliner_Tap">
@@ -137,21 +139,18 @@
             </phone:PanoramaItem>
 
             <!--Panorama item four-->
-            <phone:PanoramaItem>
-                <phone:PanoramaItem.HeaderTemplate>
+            <phone:PanoramaItem Header="info lalu lintas" Foreground="#FF28166F">
+                <!--<phone:PanoramaItem.HeaderTemplate>
                     <DataTemplate>
                         <Grid>
                             <Image Source="/Assets/ribbon.png" Width="50" Height="78" HorizontalAlignment="Left"/>
                             <TextBlock Text="info lalu lintas" FontFamily="Segoe WP" FontSize="35" FontWeight="Bold" Foreground="#28166f" Margin="59,12,0,0"/>
                         </Grid>
                     </DataTemplate>
-                </phone:PanoramaItem.HeaderTemplate>
-                <StackPanel Margin="0,-40,0,0">
-                    <Button Content="Ke Halaman Info Lalu Lintas" Foreground="#28166f" BorderBrush="#28166f" Click="Button_Click" />
-                    <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
-                        <!--<Button Content="Previous"  Height="80" Width="230" Click="Previous_Click"/>
-                                <Button Content="Next"      Height="80" Width="230" Click="Next_Click"/>-->
-                    </StackPanel>
+                </phone:PanoramaItem.HeaderTemplate>-->
+                <StackPanel>
+                    <TextBlock Text="Dapatkan informasi dan gambar dari CCTV secara real time di beberapa titik di pulau Jawa" TextWrapping="Wrap" FontStyle="Italic" Margin="0,0,0,20" />
+                    <Button Content="Dapatkan Info" Height="100" Foreground="White" BorderBrush="#28166f" Click="Button_Click" />
                 </StackPanel>
             </phone:PanoramaItem>
 
@@ -163,7 +162,7 @@
         </Grid>
     </Grid>
     <phone:PhoneApplicationPage.ApplicationBar>
-        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True" Mode="Minimized" BackgroundColor="#28166f">
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True" Mode="Minimized" BackgroundColor="#5fd8ed">
             <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/questionmark.png" Text="about"/>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
-  <DefaultLanguage xmlns="" code="en-US" />
+  <DefaultLanguage xmlns="" code="id-ID" />
   <App xmlns="" ProductID="{ece65b49-90d5-48c1-8389-cc8f736498db}" Title="RTTMC" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="MudikApp2014 author" Description="Sample description" Publisher="MudikApp2014" PublisherID="{8f7f7249-3cc5-49de-8b4f-aabfd83048ed}">
     <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
     <Capabilities>

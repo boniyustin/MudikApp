@@ -186,6 +186,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\belanja.png" />
+    <Content Include="Assets\bg-popup.png" />
     <Content Include="Assets\Bg-single.png" />
     <Content Include="Assets\btn_offline.png" />
     <Content Include="Assets\btn_selatan.png" />

@@ -1,38 +1,45 @@
-﻿<xapCache source="C:\Users\boniyustin\Documents\MudikApp2014\MudikApp2014\Bin\Debug\MudikApp2014_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="7/14/2014 5:15:27 PM">
-  <file source="C:\Users\boniyustin\Documents\MudikApp2014\MudikApp2014\obj\Debug\MudikApp2014.dll" archivePath="MudikApp2014.dll" lastWriteTime="7/14/2014 5:15:25 PM" />
-  <file source="C:\Users\boniyustin\Documents\MudikApp2014\MudikApp2014\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="7/2/2014 9:54:25 AM" />
-  <file source="C:\Users\boniyustin\Documents\MudikApp2014\MudikApp2014\Assets\App-Bg.png" archivePath="Assets\App-Bg.png" lastWriteTime="7/6/2014 12:30:56 AM" />
-  <file source="C:\Users\boniyustin\Documents\MudikApp2014\MudikApp2014\Assets\AppBar\questionmark.png" archivePath="Assets\AppBar\questionmark.png" lastWriteTime="7/6/2014 12:31:26 AM" />
-  <file source="C:\Users\boniyustin\Documents\MudikApp2014\MudikApp2014\Assets\belanja.png" archivePath="Assets\belanja.png" lastWriteTime="7/6/2014 12:30:59 AM" />
-  <file source="C:\Users\boniyustin\Documents\MudikApp2014\MudikApp2014\Assets\Bg-single.png" archivePath="Assets\Bg-single.png" lastWriteTime="7/6/2014 12:30:59 AM" />
-  <file source="C:\Users\boniyustin\Documents\MudikApp2014\MudikApp2014\Assets\btn_offline.png" archivePath="Assets\btn_offline.png" lastWriteTime="7/6/2014 12:30:59 AM" />
-  <file source="C:\Users\boniyustin\Documents\MudikApp2014\MudikApp2014\Assets\btn_selatan.png" archivePath="Assets\btn_selatan.png" lastWriteTime="7/6/2014 12:30:59 AM" />
-  <file source="C:\Users\boniyustin\Documents\MudikApp2014\MudikApp2014\Assets\btn_tengah.png" archivePath="Assets\btn_tengah.png" lastWriteTime="7/6/2014 12:31:00 AM" />
-  <file source="C:\Users\boniyustin\Documents\MudikApp2014\MudikApp2014\Assets\btn_utara.png" archivePath="Assets\btn_utara.png" lastWriteTime="7/6/2014 12:31:00 AM" />
-  <file source="C:\Users\boniyustin\Documents\MudikApp2014\MudikApp2014\Assets\food.png" archivePath="Assets\food.png" lastWriteTime="7/6/2014 12:31:00 AM" />
-  <file source="C:\Users\boniyustin\Documents\MudikApp2014\MudikApp2014\Assets\header.png" archivePath="Assets\header.png" lastWriteTime="7/6/2014 12:31:00 AM" />
-  <file source="C:\Users\boniyustin\Documents\MudikApp2014\MudikApp2014\Assets\penginapan.png" archivePath="Assets\penginapan.png" lastWriteTime="7/6/2014 12:31:00 AM" />
-  <file source="C:\Users\boniyustin\Documents\MudikApp2014\MudikApp2014\Assets\peta-mudik-2013-jawa-bali.jpg" archivePath="Assets\peta-mudik-2013-jawa-bali.jpg" lastWriteTime="7/7/2014 12:12:55 PM" />
-  <file source="C:\Users\boniyustin\Documents\MudikApp2014\MudikApp2014\Assets\ribbon.png" archivePath="Assets\ribbon.png" lastWriteTime="7/6/2014 12:31:00 AM" />
-  <file source="C:\Users\boniyustin\Documents\MudikApp2014\MudikApp2014\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="7/2/2014 9:54:25 AM" />
-  <file source="C:\Users\boniyustin\Documents\MudikApp2014\MudikApp2014\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="7/2/2014 9:54:25 AM" />
-  <file source="C:\Users\boniyustin\Documents\MudikApp2014\MudikApp2014\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="7/2/2014 9:54:25 AM" />
-  <file source="C:\Users\boniyustin\Documents\MudikApp2014\MudikApp2014\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="7/2/2014 9:54:25 AM" />
-  <file source="C:\Users\boniyustin\Documents\MudikApp2014\MudikApp2014\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="7/2/2014 9:54:25 AM" />
-  <file source="C:\Users\boniyustin\Documents\MudikApp2014\MudikApp2014\Assets\Tiles\small-tile.png" archivePath="Assets\Tiles\small-tile.png" lastWriteTime="7/7/2014 1:27:14 PM" />
-  <file source="C:\Users\boniyustin\Documents\MudikApp2014\MudikApp2014\Assets\transportasi.png" archivePath="Assets\transportasi.png" lastWriteTime="7/6/2014 12:31:00 AM" />
-  <file source="C:\Users\boniyustin\Documents\MudikApp2014\MudikApp2014\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="7/13/2014 2:44:55 PM" />
-  <file source="C:\Users\boniyustin\Documents\MudikApp2014\MudikApp2014\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="7/14/2014 4:38:10 PM" />
-  <file source="C:\Users\boniyustin\Documents\MudikApp2014\MudikApp2014\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="7/14/2014 12:56:48 PM" />
-  <file source="C:\Users\boniyustin\Documents\MudikApp2014\packages\Newtonsoft.Json.6.0.3\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll" archivePath="Newtonsoft.Json.dll" lastWriteTime="7/2/2014 9:32:44 PM" />
-  <file source="C:\Program Files (x86)\Telerik\UI for Windows Phone 8 Q2 2014\Binaries\WindowsPhone\Telerik.Windows.Controls.Input.dll" archivePath="Telerik.Windows.Controls.Input.dll" lastWriteTime="6/17/2014 12:07:00 PM" />
-  <file source="C:\Program Files (x86)\Telerik\UI for Windows Phone 8 Q2 2014\Binaries\WindowsPhone\Telerik.Windows.Controls.Primitives.dll" archivePath="Telerik.Windows.Controls.Primitives.dll" lastWriteTime="6/17/2014 12:06:52 PM" />
-  <file source="C:\Program Files (x86)\Telerik\UI for Windows Phone 8 Q2 2014\Binaries\WindowsPhone\Telerik.Windows.Core.dll" archivePath="Telerik.Windows.Core.dll" lastWriteTime="6/17/2014 12:06:48 PM" />
-  <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Windows Phone\v8.0\Libraries\System.Windows.Interactivity.dll" archivePath="System.Windows.Interactivity.dll" lastWriteTime="9/25/2012 1:41:02 AM" />
-  <file source="C:\Users\boniyustin\Documents\MudikApp2014\packages\Newtonsoft.Json.6.0.3\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.xml" archivePath="Newtonsoft.Json.xml" lastWriteTime="7/2/2014 9:32:44 PM" />
-  <file source="C:\Program Files (x86)\Telerik\UI for Windows Phone 8 Q2 2014\Binaries\WindowsPhone\Telerik.Windows.Controls.Input.xml" archivePath="Telerik.Windows.Controls.Input.xml" lastWriteTime="6/17/2014 12:06:58 PM" />
-  <file source="C:\Program Files (x86)\Telerik\UI for Windows Phone 8 Q2 2014\Binaries\WindowsPhone\Telerik.Windows.Controls.Primitives.xml" archivePath="Telerik.Windows.Controls.Primitives.xml" lastWriteTime="6/17/2014 12:06:52 PM" />
-  <file source="C:\Program Files (x86)\Telerik\UI for Windows Phone 8 Q2 2014\Binaries\WindowsPhone\Telerik.Windows.Core.xml" archivePath="Telerik.Windows.Core.xml" lastWriteTime="6/17/2014 12:06:48 PM" />
-  <file source="C:\Users\boniyustin\Documents\MudikApp2014\MudikApp2014\Assets\Tiles\medium-tile.png" archivePath="Assets\Tiles\medium-tile.png" lastWriteTime="7/7/2014 1:27:14 PM" />
-  <file source="C:\Users\boniyustin\Documents\MudikApp2014\MudikApp2014\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="7/14/2014 5:15:26 PM" />
+﻿<xapCache source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Bin\Debug\MudikApp2014_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="7/15/2014 11:07:37 AM">
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\obj\Debug\MudikApp2014.dll" archivePath="MudikApp2014.dll" lastWriteTime="7/15/2014 11:07:34 AM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="7/15/2014 9:32:42 AM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Assets\App-Bg.png" archivePath="Assets\App-Bg.png" lastWriteTime="7/15/2014 10:49:34 AM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Assets\AppBar\questionmark.png" archivePath="Assets\AppBar\questionmark.png" lastWriteTime="7/15/2014 9:32:42 AM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Assets\belanja.png" archivePath="Assets\belanja.png" lastWriteTime="7/14/2014 2:58:08 PM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Assets\bg-popup.png" archivePath="Assets\bg-popup.png" lastWriteTime="7/15/2014 10:57:44 AM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Assets\Bg-single.png" archivePath="Assets\Bg-single.png" lastWriteTime="7/14/2014 3:57:40 PM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Assets\btn_offline.png" archivePath="Assets\btn_offline.png" lastWriteTime="7/14/2014 3:46:32 PM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Assets\btn_selatan.png" archivePath="Assets\btn_selatan.png" lastWriteTime="7/14/2014 3:45:52 PM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Assets\btn_tengah.png" archivePath="Assets\btn_tengah.png" lastWriteTime="7/14/2014 3:43:26 PM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Assets\btn_utara.png" archivePath="Assets\btn_utara.png" lastWriteTime="7/14/2014 3:44:32 PM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Assets\food.png" archivePath="Assets\food.png" lastWriteTime="7/14/2014 2:51:39 PM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Assets\header.png" archivePath="Assets\header.png" lastWriteTime="7/15/2014 9:32:42 AM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Assets\penginapan.png" archivePath="Assets\penginapan.png" lastWriteTime="7/14/2014 2:55:07 PM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Assets\peta-mudik-2013-jawa-bali.jpg" archivePath="Assets\peta-mudik-2013-jawa-bali.jpg" lastWriteTime="7/15/2014 9:32:43 AM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Assets\ribbon.png" archivePath="Assets\ribbon.png" lastWriteTime="7/15/2014 9:32:43 AM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="7/15/2014 9:32:42 AM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="7/15/2014 9:32:42 AM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="7/15/2014 9:32:42 AM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="7/15/2014 9:32:42 AM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="7/15/2014 9:32:42 AM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Assets\Tiles\small-tile.png" archivePath="Assets\Tiles\small-tile.png" lastWriteTime="7/15/2014 9:32:42 AM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Assets\transportasi.png" archivePath="Assets\transportasi.png" lastWriteTime="7/14/2014 2:53:02 PM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="7/15/2014 9:32:45 AM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="7/15/2014 10:09:32 AM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="7/15/2014 9:32:43 AM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="7/15/2014 9:32:43 AM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="7/15/2014 9:32:43 AM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="7/15/2014 9:32:43 AM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="7/15/2014 9:32:43 AM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Bin\Debug\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="7/15/2014 9:32:43 AM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\packages\Newtonsoft.Json.6.0.3\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll" archivePath="Newtonsoft.Json.dll" lastWriteTime="7/15/2014 9:32:46 AM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Bin\Debug\Telerik.Windows.Controls.Input.dll" archivePath="Telerik.Windows.Controls.Input.dll" lastWriteTime="7/15/2014 9:32:43 AM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Bin\Debug\Telerik.Windows.Controls.Primitives.dll" archivePath="Telerik.Windows.Controls.Primitives.dll" lastWriteTime="7/15/2014 9:32:44 AM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Bin\Debug\Telerik.Windows.Core.dll" archivePath="Telerik.Windows.Core.dll" lastWriteTime="7/15/2014 9:32:44 AM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Bin\Debug\System.Windows.Interactivity.dll" archivePath="System.Windows.Interactivity.dll" lastWriteTime="7/15/2014 9:32:43 AM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\packages\Newtonsoft.Json.6.0.3\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.xml" archivePath="Newtonsoft.Json.xml" lastWriteTime="7/15/2014 9:32:46 AM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Bin\Debug\Telerik.Windows.Controls.Input.xml" archivePath="Telerik.Windows.Controls.Input.xml" lastWriteTime="7/15/2014 9:32:44 AM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Bin\Debug\Telerik.Windows.Controls.Primitives.xml" archivePath="Telerik.Windows.Controls.Primitives.xml" lastWriteTime="7/15/2014 9:32:44 AM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Bin\Debug\Telerik.Windows.Core.xml" archivePath="Telerik.Windows.Core.xml" lastWriteTime="7/15/2014 9:32:44 AM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="7/15/2014 9:32:42 AM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Assets\Tiles\medium-tile.png" archivePath="Assets\Tiles\medium-tile.png" lastWriteTime="7/15/2014 9:32:42 AM" />
+  <file source="E:\PROJECT\RTTMC Kemenhub Indonesia\GIT\MudikApp2014\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="7/15/2014 10:52:36 AM" />
 </xapCache>

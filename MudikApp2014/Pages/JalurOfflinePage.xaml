@@ -26,24 +26,25 @@
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,0">
             <TextBlock Text="" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock x:Name="JalurName" Text="jalur offline" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" Foreground="Black"/>
+            <TextBlock x:Name="JalurName" Text="jalur offline" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" Foreground="#FF28166F"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <ViewportControl x:Name="viewport"  
+            <StackPanel>
+                <ViewportControl x:Name="viewport"  
                 ManipulationStarted="OnManipulationStarted" ManipulationDelta="OnManipulationDelta"  
                              ManipulationCompleted="OnManipulationCompleted" ViewportChanged="viewport_ViewportChanged">
-                <Canvas x:Name="canvas">
-                    <Image x:Name="TestImage" Source="/Assets/peta-mudik-2013-jawa-bali.jpg"  
-                            RenderTransformOrigin="0,0" CacheMode="BitmapCache"
-                           ImageOpened="OnImageOpened">
-                        <Image.RenderTransform>
-                            <ScaleTransform x:Name="xform"/>
-                        </Image.RenderTransform>
-                    </Image>
-                </Canvas>
-            </ViewportControl>
+                    <Canvas x:Name="canvas"/>
+                </ViewportControl>
+                <Image x:Name="TestImage" Source="/Assets/peta-mudik-2013-jawa-bali.jpg"  
+            	RenderTransformOrigin="0,0" CacheMode="BitmapCache"
+            	ImageOpened="OnImageOpened" Height="183">
+                    <Image.RenderTransform>
+                        <ScaleTransform x:Name="xform"/>
+                    </Image.RenderTransform>
+                </Image>
+            </StackPanel>
         </Grid>
     </Grid>
 

@@ -26,7 +26,7 @@
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,0">
             <TextBlock Text="" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock x:Name="PlaceName" Text="page name" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" Foreground="Black"/>
+            <TextBlock x:Name="PlaceName" Text="info lalu lintas" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" Foreground="#FF28166F"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
@@ -44,11 +44,14 @@
         </Grid>
         <Grid x:Name="PopUpNewsLocation" Grid.RowSpan="2" Background="#99000000" Visibility="Collapsed">
             <StackPanel>
+                <StackPanel.Background>
+                    <ImageBrush Stretch="Uniform" ImageSource="/Assets/bg-popup.png"/>
+                </StackPanel.Background>
                 <Image x:Name="puImage" Margin="10" HorizontalAlignment="Center"  Height="300" Width="400"/>
-                <TextBlock x:Name="puLocation" HorizontalAlignment="Center" Height="40" TextWrapping="Wrap" FontSize="24" Foreground="White"/>
-                <TextBlock x:Name="puCondition" HorizontalAlignment="Center" Height="40" TextWrapping="Wrap" FontSize="24" Foreground="White"/>
-                <TextBlock x:Name="puTime" HorizontalAlignment="Center" Height="30" TextWrapping="Wrap" FontSize="16" Foreground="White"/>
-                <Button Content="Close" Width="200" Margin="24" Click="PopupClose_Click"/>
+                <TextBlock x:Name="puLocation" HorizontalAlignment="Center" Height="40" TextWrapping="Wrap" FontSize="24" Foreground="#FF28166F"/>
+                <TextBlock x:Name="puCondition" HorizontalAlignment="Center" Height="40" TextWrapping="Wrap" FontSize="24" Foreground="#FF28166F"/>
+                <TextBlock x:Name="puTime" HorizontalAlignment="Center" Height="30" TextWrapping="Wrap" FontSize="16" Foreground="#FF28166F"/>
+                <Button Content="Kembali" Width="200" Margin="24" Click="PopupClose_Click" BorderBrush="#FF28166F" Foreground="#FF28166F"/>
             </StackPanel>
         </Grid>
     </Grid>

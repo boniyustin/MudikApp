@@ -27,7 +27,7 @@
 
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
             <TextBlock Text="" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock Text="petunjuk arah" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" Foreground="Black"/>
+            <TextBlock Text="petunjuk arah" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" Foreground="#FF28166F"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
