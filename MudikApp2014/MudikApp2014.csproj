@@ -105,6 +105,9 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\about.xaml.cs">
+      <DependentUpon>about.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\GeneralRoutePage.xaml.cs">
       <DependentUpon>GeneralRoutePage.xaml</DependentUpon>
     </Compile>
@@ -139,6 +142,10 @@
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
     <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\about.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -185,6 +192,7 @@
     <Content Include="Assets\ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\app_store_badge.png" />
     <Content Include="Assets\belanja.png" />
     <Content Include="Assets\bg-popup.png" />
     <Content Include="Assets\Bg-single.png" />
@@ -193,6 +201,7 @@
     <Content Include="Assets\btn_tengah.png" />
     <Content Include="Assets\btn_utara.png" />
     <Content Include="Assets\food.png" />
+    <Content Include="Assets\google-play-button.png" />
     <Content Include="Assets\header.png" />
     <Content Include="Assets\penginapan.png" />
     <Content Include="Assets\peta-mudik-2013-jawa-bali.jpg" />

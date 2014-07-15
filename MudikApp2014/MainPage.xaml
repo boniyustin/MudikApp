@@ -163,7 +163,7 @@
     </Grid>
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True" Mode="Minimized" BackgroundColor="#5fd8ed">
-            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/questionmark.png" Text="about"/>
+            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/questionmark.png" Text="about" Click="ApplicationBarIconButton_Click"/>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
 </phone:PhoneApplicationPage>

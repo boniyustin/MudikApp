@@ -32,11 +32,11 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <maps:Map x:Name="map" HorizontalAlignment="Left" VerticalAlignment="Top" Height="500" Width="456" Margin="0,-24,0,0"/>
-            <ListBox Margin="0,481,0,10" Name="DirectionListBox">
+            <maps:Map x:Name="map" HorizontalAlignment="Left" VerticalAlignment="Top" Height="400" Width="456" Margin="0,-24,0,0"/>
+            <ListBox Margin="0,400,0,10" Name="DirectionListBox" Background="White" Opacity="0.8">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <TextBlock Text="{Binding direction}" Margin="0 5" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black"/>
+                        <TextBlock Text="{Binding direction}" Margin="0 5" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF28166F" FontSize="20"/>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>

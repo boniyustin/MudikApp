@@ -315,6 +315,11 @@ namespace MudikApp2014
             this.NavigationService.Navigate(new Uri("/Pages/NewsLocationPage.xaml", UriKind.Relative));
         }
 
+        private void ApplicationBarIconButton_Click(object sender, EventArgs e)
+        {
+            this.NavigationService.Navigate(new Uri("/Pages/about.xaml", UriKind.Relative));
+        }
+
         
 
         #region Get Suggestion Place from Nokia Map
